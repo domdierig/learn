@@ -3,6 +3,9 @@
 const module_express = require("express");
 const module_pug = require("pug");
 
+const controller_home = require("./controller/home.js");
+const controller_about = require("./controller/about.js");
+
 const port = process.env.port || 3000;
     
 const server = module_express();
@@ -10,12 +13,7 @@ const server = module_express();
 server.set("views", "./views");
 server.set("view engine", "pug");
 
-server.get("/", function(request, response) {
-    response.render("home", { title: "pug test", message: "this is home" })
-});
-
-server.get("/about", function(request, response) {
-    response.render("about", { title: "pug test", message: "this is about" })
-});
+server.use(controller_home);
+server.use(controller_about);
 
 server.listen(port);

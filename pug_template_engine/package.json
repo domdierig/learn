@@ -1,0 +1,19 @@
+{
+	"name": "learn",
+	"version": "1.0.0",
+	"description": "learn project for pug template engine",
+	"author": "Dominic Dierig <dom.pilipu@outlook.de>",
+	"contributors": [
+		{
+			"name": "Dominic",
+			"email": "dom.pilipu@outlook.de"
+		}
+	],
+	"main": "server.js",
+	"dependencies": {
+		"express": "4.14.x",
+		"body-parser": "1.15.x",
+		"nodemon": "1.11.x",
+        "pug": "2.0.0-beta6"
+	}
+}

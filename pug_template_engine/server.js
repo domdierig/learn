@@ -13,6 +13,8 @@ const server = module_express();
 server.set("views", "./views");
 server.set("view engine", "pug");
 
+server.use("/resource", module_express.static("./public"))
+
 server.use(controller_home);
 server.use(controller_about);
 

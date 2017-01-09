@@ -1,7 +1,5 @@
-var app = new Vue({
-    el: "#app",
+require("./src/home.component.js");
 
-    components: {
-        "home-component": require("./src/home.js")
-    }
+var app = new Vue({
+    el: "#app"
 });

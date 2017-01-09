@@ -44,24 +44,31 @@
 /* 0 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var app = new Vue({
-	    el: "#app",
+	__webpack_require__(1);
 
-	    components: {
-	        "home-component": __webpack_require__(1)
-	    }
+	var app = new Vue({
+	    el: "#app"
 	});
 
 /***/ },
 /* 1 */
 /***/ function(module, exports, __webpack_require__) {
 
-	let homeComponent = Vue.component("home-component", {
-	    data: {
-	        message: "this is the vue home component"
-	    },
-	    template: __webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"../views/home.html\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()))
+	Vue.component("home-component", {
+	    template: __webpack_require__(2),
+	    data: function() {
+	        let data = {
+	            message: "this is the vue home component"
+	        }
+	        return data;
+	    }    
 	});
+
+/***/ },
+/* 2 */
+/***/ function(module, exports) {
+
+	module.exports = "<p>{{message}}</P>";
 
 /***/ }
 /******/ ]);

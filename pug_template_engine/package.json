@@ -16,5 +16,9 @@
 		"nodemon": "1.11.x",
         "pug": "2.0.0-beta6",
         "html-loader": "0.4.x"
+	},
+	"scripts": {
+		"dev": "webpack --progress --colors --watch",
+		"server": "./node_modules/.bin/nodemon.cmd ./server.js"
 	}
 }

@@ -17,9 +17,9 @@ module.exports = (app, passport) => {
         });
     });
 
-    app.get("/logout", (requqest, response) => {
+    app.get("/logout", (request, response) => {
         request.logout();
-        request.redirect("/");
+        response.redirect("/");
     });
 
     app.post("/signup", passport.authenticate("local-signup", {

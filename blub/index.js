@@ -13,4 +13,4 @@ blub.add(module);
 
 setTimeout(function() {
     module.helloworld = "HelloDominic";
-}, 3000)
+}, 2000)

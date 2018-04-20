@@ -1,9 +1,9 @@
-class BlubModuleFactory {
+class YAModuleFactory {
     constructor() {
 
     }
 
-    createBlubModule(jsObj, htmlElement) {
+    createYAModule(jsObj, htmlElement) {
         for(let key in jsObj) {
             if(key !== "view") {
                 let value = jsObj[key];
@@ -24,28 +24,28 @@ class BlubModuleFactory {
             }            
         }
 
-        return new BlubModule(jsObj.constructor.name, htmlElement, jsObj);        
+        return new YAModule(jsObj.constructor.name, htmlElement, jsObj);        
     }
 }
-class BlubModuleManager {
+class YAModuleManager {
     constructor() {
-        this.moduleFactory = new BlubModuleFactory();
+        this.moduleFactory = new YAModuleFactory();
         this.modules = [];
     }
 
     addModule(jsObj) {        
         let htmlElements = document.getElementsByTagName(jsObj.constructor.name);        
         for(let ele of htmlElements) {            
-            let newBlubModule = this.moduleFactory.createBlubModule(jsObj, ele);
+            let newYAModule = this.moduleFactory.createYAModule(jsObj, ele);
 
-            newBlubModule.setViewToDom();
-            this.modules.push(newBlubModule);
+            newYAModule.setViewToDom();
+            this.modules.push(newYAModule);
         }        
     }
 }
 const regex = /{{[a-zA-Z ]+}}/g;
 
-class BlubModule {
+class YAModule {
     constructor(name, htmlElement, jsObj) {
         this.name = name;
         this.htmlElement = htmlElement;
@@ -74,9 +74,9 @@ class BlubModule {
         }
     }
 }
-class Blub {
+class YA {
     constructor() {
-        this.moduleManager = new BlubModuleManager();
+        this.moduleManager = new YAModuleManager();
     }
 
     add(jsObj) {

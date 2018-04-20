@@ -1,6 +1,6 @@
-class Blub {
+class YA {
     constructor() {
-        this.moduleManager = new BlubModuleManager();
+        this.moduleManager = new YAModuleManager();
     }
 
     add(jsObj) {

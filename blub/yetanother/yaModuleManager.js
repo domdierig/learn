@@ -1,16 +1,16 @@
-class BlubModuleManager {
+class YAModuleManager {
     constructor() {
-        this.moduleFactory = new BlubModuleFactory();
+        this.moduleFactory = new YAModuleFactory();
         this.modules = [];
     }
 
     addModule(jsObj) {        
         let htmlElements = document.getElementsByTagName(jsObj.constructor.name);        
         for(let ele of htmlElements) {            
-            let newBlubModule = this.moduleFactory.createBlubModule(jsObj, ele);
+            let newYAModule = this.moduleFactory.createYAModule(jsObj, ele);
 
-            newBlubModule.setViewToDom();
-            this.modules.push(newBlubModule);
+            newYAModule.setViewToDom();
+            this.modules.push(newYAModule);
         }        
     }
 }

@@ -1,6 +1,6 @@
 const regex = /{{[a-zA-Z ]+}}/g;
 
-class BlubModule {
+class YAModule {
     constructor(name, htmlElement, jsObj) {
         this.name = name;
         this.htmlElement = htmlElement;

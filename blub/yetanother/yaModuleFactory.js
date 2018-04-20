@@ -1,9 +1,9 @@
-class BlubModuleFactory {
+class YAModuleFactory {
     constructor() {
 
     }
 
-    createBlubModule(jsObj, htmlElement) {
+    createYAModule(jsObj, htmlElement) {
         for(let key in jsObj) {
             if(key !== "view") {
                 let value = jsObj[key];
@@ -24,6 +24,6 @@ class BlubModuleFactory {
             }            
         }
 
-        return new BlubModule(jsObj.constructor.name, htmlElement, jsObj);        
+        return new YAModule(jsObj.constructor.name, htmlElement, jsObj);        
     }
 }

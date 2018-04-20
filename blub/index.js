@@ -1,15 +1,15 @@
-let blub = new Blub();
+let ya = new YA();
 
 class HelloWorld {
     constructor() {
-        this.view = '<div b-update="helloworld"></div>';
+        this.view = '<div b-update="helloworld"></div><button class="button"></button>';
         this.helloworld = "HelloWorld"; 
     }
 }
 
 let module = new HelloWorld();
 
-blub.add(module);
+ya.add(module);
 
 setTimeout(function() {
     module.helloworld = "HelloDominic";

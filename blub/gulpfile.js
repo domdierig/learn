@@ -3,18 +3,18 @@ let concat = require("gulp-concat");
 let watch = require("gulp-watch");
 
 let blubFiles = [
-    "./blub/blubModuleFactory.js",
-    "./blub/blubModuleManager.js",
-    "./blub/blubModule.js",
-    "./blub/blub.js"
+    "./yetanother/yaModuleFactory.js",
+    "./yetanother/yaModuleManager.js",
+    "./yetanother/yaModule.js",
+    "./yetanother/ya.js"
 ];
 
 gulp.task("watch", function() {
-    gulp.watch("./blub/*.js", ["buildBlub"])
+    gulp.watch("./yetanother/*.js", ["buildYA"])
 })
 
-gulp.task("buildBlub", function() {
+gulp.task("buildYA", function() {
     return gulp.src(blubFiles)
-        .pipe(concat("blub.js"))
+        .pipe(concat("ya.js"))
         .pipe(gulp.dest("./"));
 })

@@ -22,8 +22,8 @@ class BlubModule {
         for (let ele of updates) {
             let updateProperty = ele.getAttribute("b-update");
             ele.innerHTML = this.jsObj[updateProperty];
-            
-            this.jsObj[updateProperty + "Handle"] = () => {
+
+            this.jsObj[updateProperty + "_f"] = () => {
                 ele.innerHTML = this.jsObj[updateProperty];
             }
         }

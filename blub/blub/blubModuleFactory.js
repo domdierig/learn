@@ -14,8 +14,8 @@ class BlubModuleFactory {
                     },
                     set: function(input) {
                         this["_" + key] = input;
-                        if(this[key + "Handle"]) {
-                            this[key + "Handle"]()
+                        if(this[key + "_f"]) {
+                            this[key + "_f"]()
                         }
                     }
                 });

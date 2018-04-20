@@ -14,8 +14,8 @@ class BlubModuleFactory {
                     },
                     set: function(input) {
                         this["_" + key] = input;
-                        if(this[key + "Handle"]) {
-                            this[key + "Handle"]()
+                        if(this[key + "_f"]) {
+                            this[key + "_f"]()
                         }
                     }
                 });
@@ -67,8 +67,8 @@ class BlubModule {
         for (let ele of updates) {
             let updateProperty = ele.getAttribute("b-update");
             ele.innerHTML = this.jsObj[updateProperty];
-            
-            this.jsObj[updateProperty + "Handle"] = () => {
+
+            this.jsObj[updateProperty + "_f"] = () => {
                 ele.innerHTML = this.jsObj[updateProperty];
             }
         }

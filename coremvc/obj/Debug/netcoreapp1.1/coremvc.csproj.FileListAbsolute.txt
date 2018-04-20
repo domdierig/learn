@@ -1,0 +1,9 @@
+C:\dev\learn\coremvc\bin\Debug\netcoreapp1.1\coremvc.deps.json
+C:\dev\learn\coremvc\bin\Debug\netcoreapp1.1\coremvc.runtimeconfig.json
+C:\dev\learn\coremvc\bin\Debug\netcoreapp1.1\coremvc.runtimeconfig.dev.json
+C:\dev\learn\coremvc\bin\Debug\netcoreapp1.1\coremvc.dll
+C:\dev\learn\coremvc\bin\Debug\netcoreapp1.1\coremvc.pdb
+C:\dev\learn\coremvc\obj\Debug\netcoreapp1.1\coremvc.csproj.CoreCompileInputs.cache
+C:\dev\learn\coremvc\obj\Debug\netcoreapp1.1\coremvc.AssemblyInfo.cs
+C:\dev\learn\coremvc\obj\Debug\netcoreapp1.1\coremvc.dll
+C:\dev\learn\coremvc\obj\Debug\netcoreapp1.1\coremvc.pdb

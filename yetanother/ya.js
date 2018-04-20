@@ -63,14 +63,22 @@ class YAModule {
     }
 
     checkForDirectories() {
-        let updates = this.htmlElement.querySelectorAll("[b-update]");
+        let updates = this.htmlElement.querySelectorAll("[ya-update]");
+        let yam = this;
         for (let ele of updates) {
-            let updateProperty = ele.getAttribute("b-update");
-            ele.innerHTML = this.jsObj[updateProperty];
+            let updateProperty = ele.getAttribute("ya-update");
+            ele.innerText = this.jsObj[updateProperty];
 
             this.jsObj[updateProperty + "_f"] = () => {
-                ele.innerHTML = this.jsObj[updateProperty];
+                ele.innerText = this.jsObj[updateProperty];
             }
+        }
+        
+        let clicks = this.htmlElement.querySelectorAll("[ya-click]");
+        for (let ele of clicks) {
+            let clickProperty = ele.getAttribute("ya-click");
+            
+            ele.onclick = function() { yam.jsObj[clickProperty]() };
         }
     }
 }

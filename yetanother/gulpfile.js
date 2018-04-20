@@ -2,7 +2,7 @@ let gulp = require("gulp");
 let concat = require("gulp-concat");
 let watch = require("gulp-watch");
 
-let blubFiles = [
+let yaFiles = [
     "./yetanother/yaModuleFactory.js",
     "./yetanother/yaModuleManager.js",
     "./yetanother/yaModule.js",
@@ -14,7 +14,7 @@ gulp.task("watch", function() {
 })
 
 gulp.task("buildYA", function() {
-    return gulp.src(blubFiles)
+    return gulp.src(yaFiles)
         .pipe(concat("ya.js"))
         .pipe(gulp.dest("./"));
 })

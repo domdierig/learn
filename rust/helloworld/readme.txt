@@ -9,3 +9,6 @@ https://visualstudio.microsoft.com/de/thank-you-downloading-visual-studio/?sku=C
 
 rust by example
 https://doc.rust-lang.org/rust-by-example/
+
+find dependencies here
+https://crates.io

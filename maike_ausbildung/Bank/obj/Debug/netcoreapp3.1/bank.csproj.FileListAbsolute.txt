@@ -1,0 +1,13 @@
+C:\dev\learn\maike_ausbildung\Bank\bin\Debug\netcoreapp3.1\bank.exe
+C:\dev\learn\maike_ausbildung\Bank\bin\Debug\netcoreapp3.1\bank.deps.json
+C:\dev\learn\maike_ausbildung\Bank\bin\Debug\netcoreapp3.1\bank.runtimeconfig.json
+C:\dev\learn\maike_ausbildung\Bank\bin\Debug\netcoreapp3.1\bank.runtimeconfig.dev.json
+C:\dev\learn\maike_ausbildung\Bank\bin\Debug\netcoreapp3.1\bank.dll
+C:\dev\learn\maike_ausbildung\Bank\bin\Debug\netcoreapp3.1\bank.pdb
+C:\dev\learn\maike_ausbildung\Bank\obj\Debug\netcoreapp3.1\bank.csprojAssemblyReference.cache
+C:\dev\learn\maike_ausbildung\Bank\obj\Debug\netcoreapp3.1\bank.AssemblyInfoInputs.cache
+C:\dev\learn\maike_ausbildung\Bank\obj\Debug\netcoreapp3.1\bank.AssemblyInfo.cs
+C:\dev\learn\maike_ausbildung\Bank\obj\Debug\netcoreapp3.1\bank.csproj.CoreCompileInputs.cache
+C:\dev\learn\maike_ausbildung\Bank\obj\Debug\netcoreapp3.1\bank.dll
+C:\dev\learn\maike_ausbildung\Bank\obj\Debug\netcoreapp3.1\bank.pdb
+C:\dev\learn\maike_ausbildung\Bank\obj\Debug\netcoreapp3.1\bank.genruntimeconfig.cache
